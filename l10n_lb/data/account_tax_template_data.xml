@@ -6,6 +6,7 @@
             <field name="amount" eval="11"/>
             <field name="amount_type">percent</field>
             <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="refund_account_id" ref="lb_coa_442700"/>
             <field name="account_id" ref="lb_coa_442700"/>
             <field name="type_tax_use">sale</field>
             <field name="tax_group_id" ref="tax_group_tva_11"/>
@@ -16,6 +17,7 @@
             <field name="amount" eval="11"/>
             <field name="amount_type">percent</field>
             <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="refund_account_id" ref="lb_coa_442600"/>
             <field name="account_id" ref="lb_coa_442600"/>
             <field name="type_tax_use">purchase</field>
             <field name="tax_group_id" ref="tax_group_tva_11"/>
@@ -27,6 +29,7 @@
             <field name="amount_type">percent</field>
             <field name="chart_template_id" ref="l10n_lb_chart_template"/>
             <field name="type_tax_use">purchase</field>
+            <field name="refund_account_id" ref="lb_coa_442610"/>
             <field name="account_id" ref="lb_coa_442610"/>
             <field name="tax_group_id" ref="tax_group_tva_11"/>
         </record>
@@ -37,6 +40,7 @@
             <field name="amount_type">percent</field>
             <field name="chart_template_id" ref="l10n_lb_chart_template"/>
             <field name="type_tax_use">purchase</field>
+            <field name="refund_account_id" ref="lb_coa_442620"/>
             <field name="account_id" ref="lb_coa_442620"/>
             <field name="tax_group_id" ref="tax_group_tva_11"/>
         </record>
