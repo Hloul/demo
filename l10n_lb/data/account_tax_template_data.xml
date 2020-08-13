@@ -12,10 +12,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_base_coll_11')],
             }),
+
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_tva_coll_11')],
                 'account_id': ref('lb_coa_442700'),
             }),
         ]"/>
@@ -23,14 +26,18 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_base_coll_11')],
             }),
+
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_tva_coll_11')],
                 'account_id': ref('lb_coa_442700'),
             }),
         ]"/>
         </record>
+
         <record model="account.tax.template" id="vat_11_costofsales">
             <field name="name">VAT on Cost of Sales</field>
             <field name="description">VAT 11%</field>
@@ -43,10 +50,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
             }),
+
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
                 'account_id': ref('lb_coa_442600'),
             }),
         ]"/>
@@ -54,14 +64,18 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
             }),
+
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
                 'account_id': ref('lb_coa_442600'),
             }),
         ]"/>
-    </record>
+        </record>
+
         <record model="account.tax.template" id="vat_11_expense">
             <field name="name">VAT on Expenses</field>
             <field name="description">VAT 11%</field>
@@ -70,14 +84,17 @@
             <field name="chart_template_id" ref="l10n_lb_chart_template"/>
             <field name="type_tax_use">purchase</field>
             <field name="tax_group_id" ref="tax_group_tva_11"/>
-        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
             }),
+
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
                 'account_id': ref('lb_coa_442610'),
             }),
         ]"/>
@@ -85,14 +102,18 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
             }),
+
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
                 'account_id': ref('lb_coa_442610'),
             }),
         ]"/>
-    </record>
+        </record>
+
         <record model="account.tax.template" id="vat_11_assets">
             <field name="name">VAT on Assets</field>
             <field name="description">VAT 11%</field>
@@ -105,10 +126,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
             }),
+
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
                 'account_id': ref('lb_coa_442620'),
             }),
         ]"/>
@@ -116,13 +140,15 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
             }),
+
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
                 'account_id': ref('lb_coa_442620'),
             }),
         ]"/>
-    </record>
-
+        </record>
 </odoo>

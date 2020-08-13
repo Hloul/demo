@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record id="l10n_lb_chart_template" model="account.chart.template">
-            <field name="name">Lebanese Chart of Accounts Template</field>
-			<field name="currency_id" ref="base.LBP"/>
-            <field name="code_digits" eval="6"/>
-            <field name="bank_account_code_prefix">512</field>
-            <field name="cash_account_code_prefix">53</field>
-            <field name="transfer_account_code_prefix">58</field>
-			<field name="complete_tax_set" eval="True"/>
-        </record>
+    <data noupdate="1">
+        <function model="account.chart.template" name="try_loading_for_current_company">
+            <value eval="[ref('l10n_lb.l10n_lb_chart_template')]"/>
+        </function>
     </data>
 </odoo>
