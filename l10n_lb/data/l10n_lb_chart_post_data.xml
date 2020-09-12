@@ -11,7 +11,6 @@
             <field name="property_stock_valuation_account_id" ref="lb_coa_370000"/>
             <field name="income_currency_exchange_account_id" ref="lb_coa_775000"/>
             <field name="expense_currency_exchange_account_id" ref="lb_coa_675000"/>
-			<field name="currency_id" ref="base.LBP"/>
         </record>
     </data>
 </odoo>
