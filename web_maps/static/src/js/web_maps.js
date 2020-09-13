@@ -1,4 +1,4 @@
-odoo.define('web_map.FieldMap', function(require) {
+odoo.define('web_maps.FieldMap', function(require) {
 "use strict";
 
 var field_registry = require('web.field_registry');

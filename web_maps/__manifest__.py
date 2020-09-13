@@ -7,7 +7,7 @@
 ##############################################################################
 
 {
-    'name': 'Web Map',
+    'name': 'Web Maps',
     'version': '0.3',
     'category': 'Extra Tools',
     'summary': 'Map widget',
