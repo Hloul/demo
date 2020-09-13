@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record model="account.tax.template" id="vat_11_sales">
+            <field name="name">VAT on Sales</field>
+            <field name="description">VAT 11%</field>
+            <field name="amount" eval="11"/>
+            <field name="amount_type">percent</field>
+            <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_tva_11"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_base_coll_11')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_tva_coll_11')],
+                'account_id': ref('lb_coa_442700'),
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_base_coll_11')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_tva_coll_11')],
+                'account_id': ref('lb_coa_442700'),
+            }),
+        ]"/>
+        </record>
+
+        <record model="account.tax.template" id="vat_11_costofsales">
+            <field name="name">VAT on Cost of Sales</field>
+            <field name="description">VAT 11%</field>
+            <field name="amount" eval="11"/>
+            <field name="amount_type">percent</field>
+            <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_tva_11"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
+                'account_id': ref('lb_coa_442600'),
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
+                'account_id': ref('lb_coa_442600'),
+            }),
+        ]"/>
+        </record>
+
+        <record model="account.tax.template" id="vat_11_expense">
+            <field name="name">VAT on Expenses</field>
+            <field name="description">VAT 11%</field>
+            <field name="amount" eval="11"/>
+            <field name="amount_type">percent</field>
+            <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_tva_11"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
+                'account_id': ref('lb_coa_442610'),
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
+                'account_id': ref('lb_coa_442610'),
+            }),
+        ]"/>
+        </record>
+
+        <record model="account.tax.template" id="vat_11_assets">
+            <field name="name">VAT on Assets</field>
+            <field name="description">VAT 11%</field>
+            <field name="amount" eval="11"/>
+            <field name="amount_type">percent</field>
+            <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_tva_11"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'plus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
+                'account_id': ref('lb_coa_442620'),
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_base_acq_11')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'minus_report_line_ids': [ref('l10n_lb.tax_report_tva_acq_11')],
+                'account_id': ref('lb_coa_442620'),
+            }),
+        ]"/>
+        </record>
+</odoo>
