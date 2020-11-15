@@ -73,9 +73,6 @@ lb_coa_461900,461900,Other Operating Creditor Accounts,account.data_account_type
 lb_coa_472000,472000,Prepaid Charges,account.data_account_type_prepayments,l10n_lb.l10n_lb_chart_template,No,
 lb_coa_474000,474000,Accrued Unpaid Charges,account.data_account_type_payable,l10n_lb.l10n_lb_chart_template,Yes,
 lb_coa_491100,491100,Provisions for Customers Bad Debts,account.data_account_type_receivable,l10n_lb.l10n_lb_chart_template,Yes,
-lb_coa_512000,512000,Banks,account.data_account_type_liquidity,l10n_lb.l10n_lb_chart_template,Yes,
-lb_coa_530000,530000,Petty Cash,account.data_account_type_liquidity,l10n_lb.l10n_lb_chart_template,Yes,
-lb_coa_580000,580000,Bank Transfer,account.data_account_type_liquidity,l10n_lb.l10n_lb_chart_template,Yes,
 lb_coa_601000,601000,Purchase of Goods - Supplier,account.data_account_type_direct_costs,l10n_lb.l10n_lb_chart_template,No,account.account_tag_operating
 lb_coa_601810,601810,Purchase of Goods - Freight,account.data_account_type_direct_costs,l10n_lb.l10n_lb_chart_template,No,account.account_tag_operating
 lb_coa_601830,601830,Purchase of Goods - Insurance,account.data_account_type_direct_costs,l10n_lb.l10n_lb_chart_template,No,account.account_tag_operating

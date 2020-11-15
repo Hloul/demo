@@ -5,9 +5,9 @@
 
 {
     'name': "Lebanon - Accounting",
-    'version': '13.3',
+    'version': '14.0',
     'author': 'BAS',
-    'website': 'http://bas.sarl',
+    'website': 'https://www.bas.sarl',
     'category': 'Localization',
     'license': 'AGPL-3',	
     'description': """
@@ -17,7 +17,7 @@ by BAS
 ==========================================
     """,
 
-    'depends': ['account'],
+    'depends': ['account','base_vat'],
 
     'data': [
         'data/account_data.xml',
@@ -26,6 +26,7 @@ by BAS
         'data/l10n_lb_chart_post_data.xml',
         'data/tax_report_data.xml',
         'data/account_tax_template_data.xml',
+        'data/bank_reconcile_model.xml',
         'data/account_chart_template_data.xml',
     ],
 

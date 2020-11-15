@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="bank_charges_reconcile_model" model="account.reconcile.model.template">
+            <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="name">Bank Charges</field>
+            <field name="account_id" ref="lb_coa_673620"/>
+            <field name="amount_type">percentage</field>
+            <field name="amount">100</field>
+        </record>
+        <record id="bank_interest_expenses_reconcile_model" model="account.reconcile.model.template">
+            <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="name">Bank Interest Expenses</field>
+            <field name="account_id" ref="lb_coa_673630"/>
+            <field name="amount_type">percentage</field>
+            <field name="amount">100</field>
+        </record>
+        <record id="bank_interest_income_reconcile_model" model="account.reconcile.model.template">
+            <field name="chart_template_id" ref="l10n_lb_chart_template"/>
+            <field name="name">Bank Interest Income</field>
+            <field name="account_id" ref="lb_coa_773000"/>
+            <field name="amount_type">percentage</field>
+            <field name="amount">100</field>
+        </record>
+    </data>
+</odoo>
